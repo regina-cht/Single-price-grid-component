@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --blue: hsl(179, 62%, 43%);
+    --light_blue: hsl(179, 47%, 52%);
+    --blue-shadow: hsl(176, 59%, 37%);
+    --bright_yellow: hsl(71, 73%, 54%);
+    --hover: hsl(81, 70%, 45%);
+    --white: hsl(0, 0%, 100%);
+    --light_gray: hsl(204, 43%, 93%);
+    --grayish_blue: hsl(218, 22%, 67%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--light_gray);
+    overflow-x: hidden;
+}
+
+.main_container {
+    margin-top: 70px;
+    width: 307px;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 308px;
+    grid-template-rows: repeat(3, 264px);
+}
+
+.main_container .main_div {
+    display: block;
+    padding: 32px 25px;
+}
+
+/* First, I set the three main sections with a background color. 
+And I added the border-radius property, 
+plus I also set the text color for the second and third div */
+
+.community {
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--white);
+}
+
+.subscription {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.us {
+    background-color: var(--light_blue);
+    border-radius: 0px 0px 10px 10px;
+    color: var(--white);
+}
+
+/* Here I set all of the title styles*/
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.title1 {
+    color: var(--blue);
+}
+
+/* First div styles*/
+
+.green-text {
+    padding: 18px 0px;
+    color: var(--bright_yellow);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.body-text {
+    font-size: 0.84rem;
+    line-height: 22px;
+    color: var(--grayish_blue);
+}
+
+/* Second div styles*/
+
+.price_div {
+    padding: 18px 0px;
+
+}
+
+span {
+    padding-right: 10px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.sign_up {
+    margin-top: 35px;
+    background-color: var(--bright_yellow);
+    text-align: center;
+    padding: 14px;
+    border-radius: 4px;
+    font-style: 700;
+    box-shadow: 0 .4rem .5rem var(--blue-shadow);
+}
+
+.sign_up:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+}
+
+/* Third div styles */
+
+ul {
+    padding-top: 18px;
+    list-style-type: none;
+    font-size: 0.84rem;
+    line-height: 22px;
+}
+
+
+/* Attribution styles*/
+
+.attribution {
+    position: relative;
+    bottom: 15px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--grayish_blue);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Styles for large screens*/
+@media (min-width:800px) {
+
+    .main_container {
+        margin-top: 195px;
+        width: 636px;
+        grid-template-columns: repeat(2, 318px);
+        grid-template-rows: repeat(3, 214px 260px 1fr);
+        grid-template-areas: "community community"
+            "div1 div2"
+            "footer footer";
+    }
+
+    .main_container .main_div {
+        display: block;
+        padding: 40px 45px;
+    }
+
+    .community {
+        grid-area: community;
+    }
+
+    .body-text {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .subscription {
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    .full-access {
+        font-size: 0.95rem;
+    }
+
+    .sign_up {
+        margin-top: 25px;
+    }
+
+    .us {
+        border-radius: 0px 0px 10px 0px;
+    }
+
+    .attribution {
+        grid-area: footer;
+    }
+}

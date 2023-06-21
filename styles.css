@@ -63,7 +63,8 @@ plus I also set the text color for the second and third div */
 
 /* Here I set all of the title styles*/
 
-.heading {
+h1,
+h2 {
     font-size: 1.3rem;
     font-weight: 700;
 }
@@ -130,16 +131,18 @@ ul {
 
 /* Attribution styles*/
 
-.attribution {
-    position: relative;
-    bottom: 15px;
+footer {
     font-size: 11px;
+    display: block;
+    justify-content: center;
     text-align: center;
-    color: var(--grayish_blue);
+    position: fixed;
+    bottom: 25px;
+    color: var (--grayish_blue);
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--blue);
 }
 
 /* Styles for large screens*/

@@ -33,7 +33,7 @@ body {
     display: grid;
     gap: 0;
     grid-template-columns: 308px;
-    grid-template-rows: repeat(3, 264px) 50px;
+    grid-template-rows: repeat(3, 264px)20px;
 }
 
 .main_container .main_div {
@@ -150,10 +150,9 @@ footer {
     .main_container {
         width: 636px;
         grid-template-columns: repeat(2, 318px);
-        grid-template-rows: 214px 260px 50px;
+        grid-template-rows: 214px 260px;
         grid-template-areas: "community community"
             "div1 div2"
-            "footer footer";
     }
 
     .main_container .main_div {

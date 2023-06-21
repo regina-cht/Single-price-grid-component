@@ -22,17 +22,18 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--light_gray);
     overflow-x: hidden;
 }
 
+
 .main_container {
-    margin-top: 70px;
     width: 307px;
     display: grid;
     gap: 0;
     grid-template-columns: 308px;
-    grid-template-rows: repeat(3, 264px);
+    grid-template-rows: repeat(3, 264px) 50px;
 }
 
 .main_container .main_div {
@@ -62,7 +63,8 @@ plus I also set the text color for the second and third div */
 
 /* Here I set all of the title styles*/
 
-h1 {
+h1,
+h2 {
     font-size: 1.3rem;
     font-weight: 700;
 }
@@ -145,10 +147,9 @@ ul {
 @media (min-width:800px) {
 
     .main_container {
-        margin-top: 195px;
         width: 636px;
         grid-template-columns: repeat(2, 318px);
-        grid-template-rows: repeat(3, 214px 260px 1fr);
+        grid-template-rows: 214px 260px 50px;
         grid-template-areas: "community community"
             "div1 div2"
             "footer footer";

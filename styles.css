@@ -63,8 +63,7 @@ plus I also set the text color for the second and third div */
 
 /* Here I set all of the title styles*/
 
-h1,
-h2 {
+.heading {
     font-size: 1.3rem;
     font-weight: 700;
 }

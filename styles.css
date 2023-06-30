@@ -193,8 +193,8 @@ footer {
         display: block;
         justify-content: center;
         text-align: center;
-        position: relative;
-        bottom: 2px;
+        position: fixed;
+        bottom: 20px;
         color: var (--grayish_blue);
     }
 }

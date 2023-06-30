@@ -21,6 +21,7 @@
 body {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--light_gray);
@@ -29,6 +30,7 @@ body {
 
 
 .main_container {
+    padding-top: 40px;
     width: 307px;
     display: grid;
     gap: 0;
@@ -131,11 +133,12 @@ ul {
 /* Attribution styles*/
 
 footer {
+    padding-top: 20px;
     font-size: 11px;
     display: block;
     justify-content: center;
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 25px;
     color: var (--grayish_blue);
 }
